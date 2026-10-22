@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+html {
+    --back-color: hsl(0, 0%, 96%);
+    --border-color: rgb(240, 240, 240);
+    --dark-color: hsl(0, 0%, 21%);
+    --notify-width: 340px;
+    --notify-margin: 10px;
+    --shadow-color: rgba(32, 64, 80, 0.2);
+    --text-color: hsl(217, 71%, 53%);
+    
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: transparent;
+    width: 100%;
+}
+
+nav.panel {
+    cursor: pointer;
+}
+
+nav.panel .panel-heading:hover span:not(:last-child) {
+    color: var(--text-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .no-padding-right {
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .navbar-start .navbar-link,
+    .navbar-start .navbar-item-one {
+        align-items: center;
+        display: flex;
+    }
+    .navbar-end {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.modal-card {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px var(--shadow-color);
+}
+
+.notification {
+    box-shadow: 0px 0px 15px 0px var(--shadow-color);
+    max-width: var(--notify-width);
+    position: absolute !important;
+    right: var(--notify-margin);
+    top: var(--notify-margin);
+    width: 100%;
+    z-index: 100 !important;
+}
+
+.panel-block:hover .card-content {
+    background-color: var(--back-color);
+}
+
+.md-14 { font-size: 14px; }
+.md-16 { font-size: 16px; }
+.md-18 { font-size: 18px; }
+.md-24 { font-size: 24px; }
+.md-36 { font-size: 36px; }
+.md-48 { font-size: 48px; }
+
+.is-disable {
+    pointer-events: none;
+    opacity: .65;
+}

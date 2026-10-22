@@ -1,2 +1,2 @@
-# mytasks
-Save your daily tasks devided by categories
+# MYTASKS
+### Save your daily tasks devided by categories
